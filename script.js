@@ -27,3 +27,15 @@ function check() {
     document.getElementById("after_submit").style.visibility = "visible";
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct!";
 }
+//Add person's name and score to list.
+function addLi() {
+
+    var txtVal = document.getElementById('txtVal').value,
+        listNode = document.getElementById('list'),
+        liNode = document.createElement("LI"),
+        txtNode = document.createTextNode(txtVal);
+
+    liNode.appendChild(txtNode);
+    listNode.appendChild(liNode);
+
+}
