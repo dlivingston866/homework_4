@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <h1>Timed Quiz</h1>
+    <p>You have 10 seconds to complete this quiz.</p>
+
+
+    <button id="button" onclick="setTimeout(timerFunction, 10000);">Press to Start Timer:</button>
+
+    <form id="quiz" name="quiz">
+
+        <p>What does HTML stand for?</p>
+        <input type="radio" id="mulchoice" name="question1" value="correct"> Hyper-text Markup Language<br>
+        <input type="radio" id="mulchoice" name="question1" value="wrong"> High-Tech Multiple Loops<br>
+        <input type="radio" id="mulchoice" name="question1" value="wrong"> Hidden Text Monospace Labels<br>
+
+        <p>What does CSS stand for?</p>
+        <input type="radio" id="mulchoice" name="question2" value="wrong"> Computational Screen Scripts<br>
+        <input type="radio" id="mulchoice" name="question2" value="correct"> Cascading Style Sheets<br>
+        <input type="radio" id="mulchoice" name="question2" value="wrong"> Computerized Scripted Strings<br>
+
+        <p>What Does DOM stand for?</p>
+        <input type="radio" id="mulchoice" name="question3" value="wrong"> Data Operator Map<br>
+        <input type="radio" id="mulchoice" name="question3" value="wrong"> Detail Option Map<br>
+        <input type="radio" id="mulchoice" name="question3" value="correct"> Document Object Model<br>
+
+        <input type="button" id="button" value="I'm finished!" onclick="check();">
+
+    </form>
+
+    <div id="after_submit">
+        <p id="number_correct"></p>
+    </div>
+
+
+    <div class="testtakers">
+        <h1>Test Takers</h1>
+
+        <form id="score-form" method="POST">
+
+            <label for "score-text">Initials and Number Correct</label>
+
+            <input type="text" placeholder="Initials and Score" name="score-text" id="score-text" />
+        </form>
+        <p>Test Taker Count: <span id="taker-count">0</span></p>
+        <ul id="ttakers">
+        </ul>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
