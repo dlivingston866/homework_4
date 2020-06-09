@@ -1,41 +1,41 @@
-let takerInput = document.querySelector("#score-text");
-let scoreForm = document.querySelector("#score-form");
-let takerList = document.querySelector("#ttakers");
-let takerCountSpan = document.querySelector("#taker-count");
+// let takerInput = document.querySelector("#score-text");
+// let scoreForm = document.querySelector("#score-form");
+// let takerList = document.querySelector("#ttakers");
+// let takerCountSpan = document.querySelector("#taker-count");
 
-let testtakers = ["Learn HTML", "Learn CSS", "Learn JavaScript"];
+// let testtakers = ["Learn HTML", "Learn CSS", "Learn JavaScript"];
 
-renderNames();
+// renderNames();
 
-function renderNames() {
+// function renderNames() {
 
-    takerList.innerHTML = "";
-    takerCountSpan.text.content = testtakers.length;
+//     takerList.innerHTML = "";
+//     takerCountSpan.text.content = testtakers.length;
 
-    for (let i = 0; i < testtakers.length; i++) {
+//     for (let i = 0; i < testtakers.length; i++) {
 
-        let testtaker = testtakers[i];
+//         let testtaker = testtakers[i];
 
-        let li = document.createElement("li");
-        li.textContent = takers;
-        takerList.appendChild(li);
-    }
-}
+//         let li = document.createElement("li");
+//         li.textContent = takers;
+//         takerList.appendChild(li);
+//     }
+// }
 
-scoreForm.addEventListener("submit", function(event) {
+// scoreForm.addEventListener("submit", function(event) {
 
-    event.preventDefault();
-    let scoreText = takerInput.value.trim();
+//     event.preventDefault();
+//     let scoreText = takerInput.value.trim();
 
-    if (scoreText === "") {
-        return;
-    }
-    takers.push(scoreText);
-    takerInput.value = "";
+//     if (scoreText === "") {
+//         return;
+//     }
+//     takers.push(scoreText);
+//     takerInput.value = "";
 
-    renderNames();
+//     renderNames();
 
-});
+// });
 
 
 
